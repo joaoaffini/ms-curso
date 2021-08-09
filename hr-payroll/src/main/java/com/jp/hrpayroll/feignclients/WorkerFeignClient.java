@@ -10,7 +10,7 @@ import com.jp.hrpayroll.entity.Worker;
 
 @Component
 //name = application_name do recurso a ser acessado
-@FeignClient(name = "hr-worker", url = "localhost:8001", path = "/workers")
+@FeignClient(name = "hr-worker", path = "/workers")
 public interface WorkerFeignClient {
 	
 	//esta interface tem que ser igual a interface do recurso que será chamado
