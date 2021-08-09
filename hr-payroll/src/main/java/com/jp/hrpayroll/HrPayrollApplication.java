@@ -2,10 +2,13 @@ package com.jp.hrpayroll;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.cloud.netflix.ribbon.RibbonClient;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
-@RibbonClient(name = "hr-worker")
+
+@EnableEurekaClient
+//nao precisa mais do ribbon para balancear carga, pois o eureka ja tem um balancing embutido
+//@RibbonClient(name = "hr-worker")
 @EnableFeignClients
 @SpringBootApplication
 public class HrPayrollApplication {
