@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class HrOatuhApplication {
+public class HrOauthApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(HrOatuhApplication.class, args);
+		SpringApplication.run(HrOauthApplication.class, args);
 	}
 
 }
