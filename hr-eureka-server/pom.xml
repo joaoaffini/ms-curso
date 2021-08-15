@@ -9,7 +9,7 @@
 		<version>2.3.4.RELEASE</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.devsuperior</groupId>
+	<groupId>com.jp</groupId>
 	<artifactId>hr-eureka-server</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>hr-eureka-server</name>
@@ -17,7 +17,7 @@
 
 	<properties>
 		<java.version>11</java.version>
-		<spring-cloud.version>Hoxton.SR12</spring-cloud.version>
+		<spring-cloud.version>Hoxton.SR8</spring-cloud.version>
 	</properties>
 
 	<dependencies>
@@ -26,6 +26,7 @@
 			<groupId>org.glassfish.jaxb</groupId>
 			<artifactId>jaxb-runtime</artifactId>
 		</dependency>
+		
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
