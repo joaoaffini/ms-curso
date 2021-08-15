@@ -25,8 +25,8 @@ public class WorkerResource {
 	private static Logger LOGGER = LoggerFactory.getLogger(WorkerResource.class);
 	
 	//test.config = esta la no repositorio do git = https://github.com/joaoaffini/ms-curso-configs/blob/main/hr-worker.properties
-	@Value("${test.config}")
-	private String testConfig;
+//	@Value("${test.config}")
+//	private String testConfig;
 	
 	@Autowired
 	private Environment env;
@@ -37,7 +37,7 @@ public class WorkerResource {
 	@GetMapping(path = "/configs")
 	public ResponseEntity<Void> getConfigs() {
 		
-		LOGGER.info("Config = " + testConfig);
+//		LOGGER.info("Config = " + testConfig);
 		
 		return ResponseEntity.noContent().build();
 		
